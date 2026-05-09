@@ -10,7 +10,7 @@ public class Scenario {
     private Mode mode;
     private List<Dimension> dimensions;
 
-    public Scenario(String name, Mode mode) {
+    public Scenario(String name, QualityType qualityType, Mode mode) {
         this.name = name;
         this.qualityType = qualityType;
         this.mode = mode;
