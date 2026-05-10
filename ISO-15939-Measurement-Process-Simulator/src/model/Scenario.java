@@ -38,7 +38,7 @@ public class Scenario {
         dimensions.add(dimension);
     }
 
-    public List<Metric> getAllMetrics() {
+    public List<Metric> getAllMetrics() {  // Collects all metrics from every dimension into a single list
         List<Metric> allMetrics = new ArrayList<>();
         for (Dimension dimension : dimensions) {
             allMetrics.addAll(dimension.getMetrics());

@@ -11,7 +11,7 @@ public class ScoreCalculator {
         return Math.round(value * 2) / 2.0;
     }
 
-    public static double calculateMetricScore(Metric metric) {
+    public static double calculateMetricScore(Metric metric) { // Calculates a normalized score between 1 and 5
         double min = metric.getMinValue();
         double max = metric.getMaxValue();
         double value = metric.getRawValue();
@@ -29,7 +29,8 @@ public class ScoreCalculator {
         return roundToNearestHalf(score);
     }
 
-    public static double calculateDimensionScore(Dimension dimension) {
+
+    public static double calculateDimensionScore(Dimension dimension) {  // Calculates weighted average score of a dimension
         double totalWeightedScore = 0;
         double totalCoefficient = 0;
 
@@ -44,6 +45,7 @@ public class ScoreCalculator {
 
         return totalWeightedScore / totalCoefficient;
     }
+
 
     public static Dimension findLowestDimension(Scenario scenario) {
         Dimension lowestDimension = null;
@@ -60,6 +62,7 @@ public class ScoreCalculator {
 
         return lowestDimension;
     }
+
 
     public static double calculateGap(double score) {
         return 5.0 - score;

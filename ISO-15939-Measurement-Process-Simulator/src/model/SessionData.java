@@ -38,17 +38,17 @@ public class SessionData {
         this.selectedScenario = selectedScenario;
     }
 
-    public boolean isProfileComplete() {
+    public boolean isProfileComplete() {  // Checks if user profile information is completed
         return profile != null && profile.isValid();
     }
 
-    public boolean isDefinitionComplete() {
+    public boolean isDefinitionComplete() { // Checks if quality type, mode, and scenario are selected
         return selectedQualityType != null
                 && selectedMode != null
                 && selectedScenario != null;
     }
 
-    public void clear() {
+    public void clear() { // Clears all saved session data
         profile = null;
         selectedQualityType = null;
         selectedMode = null;
