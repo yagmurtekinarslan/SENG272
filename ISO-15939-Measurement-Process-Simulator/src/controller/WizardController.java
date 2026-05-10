@@ -35,7 +35,7 @@ public class WizardController {
 
     private int currentStep = 0;
 
-    public void nextStep() {  // Controls step transitions in the wizard
+    public void nextStep() {  // Handles wizard step transitions
         currentStep++;
 
         if (currentStep == 1) {
