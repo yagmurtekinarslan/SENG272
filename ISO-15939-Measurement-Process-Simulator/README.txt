@@ -27,5 +27,5 @@ Run the application using:
 
 java -cp out Main
 
-Screenshot:
+Screenshots:
 Project screenshots are included in the screenshots folder.
