@@ -32,5 +32,5 @@ Project screenshots are included in the screenshots folder.
 
 Presentation Video:
 Presentation video is added to the repository.
-If the video preview does not open on GitHub, please use the "View raw" option.
+If the video preview does not open on GitHub, please use the "View raw" or "Download" option.
 
